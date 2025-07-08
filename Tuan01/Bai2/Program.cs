@@ -17,15 +17,26 @@ while (isContinue)
                 themSinhVien();
                 break;
             case 2:
+                Console.WriteLine("Danh sach sinh vien hien tai: ");
+                Console.WriteLine(string.Format("{0,-10} | {1,-25} | {2,-5}", "Ma SV", "Ho Ten", "Diem TB"));
                 hienThiSinhVien();
                 break;
             case 3:
-                
                 Console.Write("Nhap ma sinh vien can tim: ");
                 string maSV = Console.ReadLine();
                 timKiemSinhVien(maSV);
                 break;
             case 4:
+                Console.Write("Nhap ma sinh vien can xoa: ");
+                string maSVToDelete = Console.ReadLine();
+                xoaSinhVien(maSVToDelete);
+                break;
+            case 5:
+                Console.Write("Nhap ma sinh vien can cap nhat: ");
+                string maSVToUpdate = Console.ReadLine();
+                capNhatSinhVien(maSVToUpdate);
+                break;
+            case 6:
                 isContinue = false;
                 Console.WriteLine("Cam on ban da su dung chuong trinh. Hen gap lai!");
                 break;
@@ -38,11 +49,14 @@ while (isContinue)
 
 void ShowMenu()
 {
-    Console.WriteLine("Vui long chon mot trong cac lua chon sau: ");
+    //Console.WriteLine("Vui long chon mot trong cac lua chon sau: ");
     Console.WriteLine("1. Them moi 1 Sinh vien ");
     Console.WriteLine("2. Hien thi danh sach Sinh vien ");
     Console.WriteLine("3. Tim kiem Sinh vien theo MSSV");
-    Console.WriteLine("4. Thoat chuong trinh ");
+    Console.WriteLine("4. Xoa Sinh vien theo MSSV");
+    Console.WriteLine("5. Cap nhat thong tin Sinh vien theo MSSV");
+    Console.WriteLine("6. Thoat chuong trinh ");
+    Console.Write("Nhap lua chon cua ban: ");
 }
 
 void themSinhVien()
@@ -66,7 +80,7 @@ void hienThiSinhVien()
 {
     foreach (var sv in danhSachSinhVien)
     {
-        Console.WriteLine($"Ma SV: {sv.getMaSV}/t| Ho Ten: {sv.getHoTen}/t| Diem TB: {sv.getDiemTB:F2}/t|");
+        sv.hienThiSinhVien();
     }
 }
 

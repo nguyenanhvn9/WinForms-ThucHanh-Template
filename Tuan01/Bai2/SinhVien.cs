@@ -38,11 +38,11 @@ namespace Bai2
 
         public void addSinhVien()
         {
-            Console.WriteLine("Nhap ma sinh vien ");
+            Console.Write("Nhap ma sinh vien: ");
             MaSV = Console.ReadLine();
-            Console.WriteLine("Nhap ho ten sinh vien: ");
+            Console.Write("Nhap ho ten sinh vien: ");
             HoTen = Console.ReadLine();
-            Console.WriteLine("Nhap diem trung binh: ");
+            Console.Write("Nhap diem trung binh: ");
             DiemTB = Convert.ToDouble(Console.ReadLine());
             while (DiemTB < 0 || DiemTB > 10)
             {
@@ -53,28 +53,17 @@ namespace Bai2
 
         public void hienThiSinhVien()
         {
-            Console.WriteLine($"Ma SV: {MaSV}\t| Ho Ten: {HoTen}\t| Diem TB: {DiemTB:F2}\t|");
-        }
-
-        public void timKiemSinhVien(string maSV)
-        {
-            if (MaSV.Equals(maSV, StringComparison.OrdinalIgnoreCase))
-            {
-                Console.WriteLine($"Ma SV: {MaSV}\t| Ho Ten: {HoTen}\t| Diem TB: {DiemTB:F2}\t|");
-            }
-            else
-            {
-                Console.WriteLine("Khong tim thay sinh vien voi ma da nhap.");
-            }
+            Console.WriteLine(string.Format("{0,-10} | {1,-25} | {2,-5}", MaSV, HoTen, DiemTB));
+            //Console.WriteLine($"Ma SV: {MaSV}\t| Ho Ten: {HoTen}\t| Diem TB: {DiemTB:F2}\t|");
         }
 
         public void capNhatSinhVien(string maSV)
         {
             if (MaSV.Equals(maSV, StringComparison.OrdinalIgnoreCase))
             {
-                Console.WriteLine("Nhap ho ten moi: ");
+                Console.Write("Nhap ho ten moi: ");
                 HoTen = Console.ReadLine();
-                Console.WriteLine("Nhap diem trung binh moi: ");
+                Console.Write("Nhap diem trung binh moi: ");
                 DiemTB = Convert.ToDouble(Console.ReadLine());
                 while (DiemTB < 0 || DiemTB > 10)
                 {
