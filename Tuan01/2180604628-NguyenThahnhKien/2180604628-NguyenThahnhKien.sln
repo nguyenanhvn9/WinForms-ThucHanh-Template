@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2180604628-NguyenThahnhKien", "2180604628-NguyenThahnhKien\2180604628-NguyenThahnhKien.csproj", "{776C3E0F-FA54-43C2-85FE-286448823CA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baitap2", "Baitap2\Baitap2.csproj", "{E17CB06B-B364-4A84-92A2-A0A0C9B2ADC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai tap 3", "Bai tap 3\Bai tap 3.csproj", "{491BD486-C55D-41D6-B5C1-4EEF342C8B8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{776C3E0F-FA54-43C2-85FE-286448823CA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{776C3E0F-FA54-43C2-85FE-286448823CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{776C3E0F-FA54-43C2-85FE-286448823CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{776C3E0F-FA54-43C2-85FE-286448823CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E17CB06B-B364-4A84-92A2-A0A0C9B2ADC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E17CB06B-B364-4A84-92A2-A0A0C9B2ADC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E17CB06B-B364-4A84-92A2-A0A0C9B2ADC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E17CB06B-B364-4A84-92A2-A0A0C9B2ADC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{491BD486-C55D-41D6-B5C1-4EEF342C8B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{491BD486-C55D-41D6-B5C1-4EEF342C8B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{491BD486-C55D-41D6-B5C1-4EEF342C8B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{491BD486-C55D-41D6-B5C1-4EEF342C8B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
